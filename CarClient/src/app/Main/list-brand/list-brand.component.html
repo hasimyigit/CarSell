@@ -1,0 +1,53 @@
+<div class="mat-elevation-z8 data-table">
+  <mat-table  #table [dataSource]="listData" matSort aria-label="Elements"   >
+
+    <!-- Id Column -->
+    <ng-container matColumnDef="arabaUrl" > 
+      <mat-header-cell *matHeaderCellDef ></mat-header-cell>
+      <mat-cell *matCellDef="let row"><img src={{row.arabaUrl}} alt="" class="rowImg" ></mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="markaAd">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Marka</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.markaAd}}</mat-cell>
+    </ng-container>
+
+    <!-- Amount Column -->
+    <ng-container matColumnDef="arabaYili">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Yıl</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.arabaYili}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="arabaKm">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>KM</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.arabaKm}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="renkAd">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Renk</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.renkAd}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="arabaFiyat">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Fiyat</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.arabaFiyat}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="arabaId">
+        <mat-header-cell *matHeaderCellDef mat-sort-header></mat-header-cell>
+     
+        <mat-cell *matCellDef="let row"><button type="button" class="btn btn-info"  [routerLink]="['/cardetail/',row.arabaId]"  routerLinkActive="router-link-active" >Detay</button></mat-cell>
+      </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator
+    [length]="listData.data.length"
+    [pageIndex]="0"
+    [pageSize]="15"
+    [pageSizeOptions]="[1, 25, 50, 100]">
+  </mat-paginator>
+</div>

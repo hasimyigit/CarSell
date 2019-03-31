@@ -1,0 +1,44 @@
+/* .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: 50% 15%;
+    width: 400px;
+    height: 300px;
+    
+  }  */
+
+ 
+
+
+
+.form-cityadd {
+  width: 50%;
+  max-width: 300px;
+ 
+
+}
+
+.help-block{
+  color:red;
+}
+#arabaId{
+  display: none;
+}
+img{
+  float:left;
+  object-fit: cover;
+  object-position: 50% 15%;
+  width: 600px;
+  height: 400px;
+ 
+}

@@ -1,0 +1,33 @@
+<h1>Arabalar</h1>
+<div class="row">
+  <div class="col-md-11">
+      <div class="card" style="width: 18rem;" *ngFor="let item of carList" [class.selected]="item === secilenCar" (mouseover)="onSelect(item)">
+          <img src= {{item.arabaUrl}} class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.markaAd}}</h5>
+            <p class="card-text">{{item.aciklama}}</p>
+            <button type="button"  [routerLink]="['cardetail/',item.arabaId]" routerLinkActive="router-link-active"   class="btn btn-success btnIlan" >Detaaay</button>
+            <button type="button"  [routerLink]="['caredit/',item.arabaId]" routerLinkActive="router-link-active"   class="btn btn-success btnIlan" >Detaaay</button>
+          </div>
+         
+        </div>
+
+  </div>
+  <div class="col-md-1">
+      <div id="ilan">
+          <button id="btnIlan"  type="button" class="btn btn-success btnIlan" >İlan Ver</button>
+       
+        
+        </div>  
+  </div>
+</div>
+
+
+
+
+
+  
+      
+     
+   
+  

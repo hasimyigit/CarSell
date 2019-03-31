@@ -1,0 +1,81 @@
+
+  <div class="row" >
+    <div class="col-md-5">
+      <img class="img-fluid" src= {{car.arabaUrl}} alt="">
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        
+        
+        <li class="list-group-item" style="background-color: lightslategrey; color: white; text-align: center"><strong> {{car.arabaFiyat}} &#8378;</strong></li>
+        <li class="list-group-item"  style="background-color:cadetblue; color: white; text-align: center" ><strong> {{car.sehirAd}}</strong></li>
+        <li class="list-group-item">İlan Tarihi: <strong class="prop">11.11.2011</strong> </li>
+        <li class="list-group-item">Marka <strong class="prop"> {{car.markaAd}}</strong></li>
+        <li class="list-group-item">Yıl<strong class="prop"> {{car.arabaYili}}</strong></li>
+        <li class="list-group-item">Yakıt <strong class="prop"> {{car.yakitAd}}</strong></li>
+        <li class="list-group-item">KM <strong class="prop"> {{car.arabaKm}}</strong></li>
+        <li class="list-group-item">Renk <strong class="prop"> {{car.renkAd}}</strong></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Satıcı</h5>
+
+            </div>
+            <div class="modal-body">
+              <p>{{musteri.musteriAd}}{{musteri.musteriSoyad}}</p>
+              <p>{{musteri.musteriTelNo}}</p>
+            </div>
+            <button class="btn btn-success " (click)="goBack()">go back</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="col-md-9"  >
+          <div class="card" >
+              <div class="card-header" style="background-color: darkgray">
+                Detaylar
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Açıklama</h5>
+                <p class="card-text">{{car.aciklama}}</p>
+              </div>
+            </div>
+            
+      </div>
+  
+ 
+    
+        
+        </div>
+       
+        <div class="row">
+
+
+          <div class="col-md-11" style="margin-top: 20px;">
+            <div class="card" id="card" style="width: 18rem;" *ngFor="let item of cars"  >
+                <img src= {{item.arabaUrl}} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.markaAd}}</h5>
+                  <p class="card-text">{{item.aciklama}}</p>
+                  <p>  {{item.arabaId}}</p>
+                 <button type="button" class="btn btn-success btnIlan" [routerLink]="['/cardetail/',item.arabaId]" routerLinkActive="router-link-active" (click)="goTop()"  >Detay</button>        
+              
+                    
+                </div>
+               
+              </div>
+      
+        </div>
+          
+        </div>
+      
+
+
+
+      

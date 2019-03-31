@@ -1,0 +1,20 @@
+<form [formGroup]="signInForm" (submit)="signIn()" class="form-signIn">
+  <input type="text" id="kullaniciAdi"  formControlName="kullaniciAdi"   class="form-control" placeholder="kullaniciAdi" >
+
+  <span class="help-block" *ngIf="signInForm.get('kullaniciAdi').hasError('required') && signInForm.get('kullaniciAdi').touched">
+    Resim Zorunludur
+  </span>
+  <br>
+    <input type="text"  id="kullaniciSifresi" formControlName="kullaniciSifresi" class="form-control" placeholder="kullaniciSifresi" >
+
+    <span class="help-block" *ngIf="signInForm.get('kullaniciSifresi').hasError('required') && signInForm.get('kullaniciSifresi').touched">
+        ArabaKm Zorunludur
+    </span>
+   
+
+
+
+  <button type="submit" class="btn btn-lg btn-primary btn-block" [disabled]="!signInForm.valid">Ekle</button>
+  <h6>{{signInForm.value|json}}</h6>
+  <h6>{{signInForm.status|json}}</h6>
+</form>

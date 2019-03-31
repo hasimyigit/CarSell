@@ -1,0 +1,52 @@
+img{
+    float:left;
+    object-fit: cover;
+    object-position: 50% 15%;
+    width: 600px;
+    height: 400px;
+   
+}
+
+.list-group-item .prop{
+
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+}
+.modal-header{
+    color:white;
+    text-align: center;
+    background-color: coral;
+}
+
+.modal-body{
+  
+    text-align: center;
+   
+}
+#card {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 10px;
+   
+  }
+  
+  .card img {
+    margin-right: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: 50% 15%;
+    width: 286px;
+    height: 200px;
+  }
+  #ilan {
+    
+    
+    position: fixed;
+    
+  }
+  .btn {
+    float: right;
+   
+  }
