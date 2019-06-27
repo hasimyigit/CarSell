@@ -16,7 +16,5 @@ BaseRepository sınıfı içerisine imzaların operasyonları yazıldı.
 
 WepApi için gerekli olan DTO klasörünün içerisine sınıflar(ArabaDoldur vb.) eklendi ve AutoMapper sayesinde veritabanındaki veriler ile birbirine Maplendi.
 
-Projenin tasarımında Bootstrap kullanıldı.
+Projenin tasarımında Bootstrap 4 kullanıldı.
 Angular 7 sayesinde hızlı dinamik ve SinglePage bir proje oldu.
-
-
