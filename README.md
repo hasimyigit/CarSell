@@ -1,4 +1,4 @@
-# CarSell
+# CarSell (Single Page Application)
 Web ve Mobil programlama kursumun bitirme projesi olarak yapmış olduğum CarSell projesidir.
 Projenin amacı Sahibinden.com'un sadece araba alım satım versiyonudur.
 
