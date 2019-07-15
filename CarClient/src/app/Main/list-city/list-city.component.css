@@ -1,5 +1,6 @@
 table {
     width: 100%;
+    cursor:pointer;
   }
   
   .mat-form-field {
@@ -16,4 +17,7 @@ table {
     object-position: 50% 15%;
     width: 80px;
     height: 80px;
+  }
+  div{
+    cursor:pointer;
   }

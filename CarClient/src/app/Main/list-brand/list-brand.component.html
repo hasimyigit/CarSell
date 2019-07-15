@@ -37,11 +37,11 @@
     <ng-container matColumnDef="arabaId">
         <mat-header-cell *matHeaderCellDef mat-sort-header></mat-header-cell>
      
-        <mat-cell *matCellDef="let row"><button type="button" class="btn btn-info"  [routerLink]="['/cardetail/',row.arabaId]"  routerLinkActive="router-link-active" >Detay</button></mat-cell>
+        <mat-cell *matCellDef="let row"></mat-cell>
       </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/cardetail/',row.arabaId]"  routerLinkActive="router-link-active"></mat-row>
   </mat-table>
 
   <mat-paginator #paginator
