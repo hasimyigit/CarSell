@@ -18,3 +18,7 @@ WepApi için gerekli olan DTO klasörünün içerisine sınıflar(ArabaDoldur vb
 
 Projenin tasarımında Bootstrap 4 kullanıldı.
 Angular 7 sayesinde hızlı dinamik ve SinglePage bir proje oldu.
+
+
+
+-------------------------------------MUTLAKA MIGRATION YAPIN------------------------
